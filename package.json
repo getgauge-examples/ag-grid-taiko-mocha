@@ -1,0 +1,20 @@
+{
+    "name": "ag-grid-taiko-mocha",
+    "version": "1.0.0",
+    "description": "Example to test taiko with mocha",
+    "scripts": {
+      "test": "mocha test/ag-grid-test.js --timeout 30000"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sguptatw/ag-grid-taiko-mocha.git"
+    },
+    "keywords": [
+      "taiko",
+      "mocha"
+    ],
+    "dependencies": {
+      "mocha": "^6.1.4",
+      "taiko": "^0.7.1"
+    }
+  }
