@@ -1,6 +1,8 @@
 # Testing ag-grid with Taiko and mocha
 
-This is an example project to test ag-grid with Taiko. It mainly uses the example hosted on [ag-grid/example.php](https://www.ag-grid.com/example.php) for its test cases.
+This is an example project to test ag-grid with Taiko. The same example with Taiko and Gauge is available at [ag-grid-taiko-gauge](https://github.com/sguptatw/ag-grid-taiko-gauge.git)
+
+It mainly uses the example hosted on [ag-grid/example.php](https://www.ag-grid.com/example.php) for its test cases.
 
 This example covers
 - Sorting an ag-grid column

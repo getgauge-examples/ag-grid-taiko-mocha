@@ -3,7 +3,6 @@
 
     describe('Testing AG-Grid with Mocha and Taiko', () => {
         before(async () => {
-            await setConfig({navigationTimeout:30000})
             await openBrowser({ headless: false});
         });
 

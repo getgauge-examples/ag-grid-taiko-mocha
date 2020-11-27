@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Example to test taiko with mocha",
     "scripts": {
-      "test": "mocha test/ag-grid-test.js --timeout 30000"
+      "test": "mocha test --timeout 30000"
     },
     "repository": {
       "type": "git",
