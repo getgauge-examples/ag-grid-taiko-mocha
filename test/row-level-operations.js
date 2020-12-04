@@ -1,5 +1,5 @@
     "use strict";
-    const { openBrowser, $, closeBrowser,within, goto, click, doubleClick,below,textBox,button,text,toRightOf } = require('taiko');
+    const { openBrowser, $, closeBrowser,within, goto, click, doubleClick,below,textBox,button,toRightOf } = require('taiko');
     const assert = require("assert");
 
     describe('Row level operations on ag-grid', () => {
@@ -42,12 +42,12 @@
                 await click(button({"aria-label": "Open Filter Menu"}),below("Date"),toRightOf("Date"))
                 await click(textBox(below("Equals")));
 
-                var date = new Date();
-                var last = new Date(date.getTime() + (1 * 24 * 60 * 60 * 1000));
-                var day =last.getDate();
-                const mon = new Intl.DateTimeFormat('en', { month: 'long' }).format(last);    
+                var today = new Date();
+                var tomorrow = new Date(today.getTime() + (1 * 24 * 60 * 60 * 1000));
+                var day =tomorrow.getDate();
+                const mon = new Intl.DateTimeFormat('en', { month: 'long' }).format(tomorrow);    
                 
-                if(date.getMonth()!=last.getMonth())
+                if(today.getMonth()!=tomorrow.getMonth())
                     await click($('.flatpickr-next-month'));
                 await click(day.toString(),below(mon),within($('.flatpickr-innerContainer')))            
             });
